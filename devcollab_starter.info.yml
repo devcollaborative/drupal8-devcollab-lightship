@@ -1,0 +1,29 @@
+name: devcollab_starter
+type: theme
+base theme: classy
+description: 'A devcollab_starter theme is  flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
+package: Custom
+# version: VERSION
+# core: 8.x
+libraries:
+  - devcollab_starter/global-styling
+  - devcollab_starter/global-scripts
+
+regions:
+  header: Header
+  main_menu: 'Main menu'
+  secondary_menu: 'Secondary menu'
+  hero: Hero
+  highlighted: Highlighted
+  help: Help 
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+
+
+version: '8.x-1.0'
+core: '8.x'
+project: 'devcollab_starter'
+datestamp: 1544033280

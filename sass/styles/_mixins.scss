@@ -1,0 +1,117 @@
+// Px to Em mixin
+$browser-context: 16; // Default
+
+// Unit mixins
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+// Rem conversion
+
+// Convert pixel values to rem.
+@function rem($px, $base: $base-font-size) {
+  @return ($px / $base) * 1rem;
+}
+
+
+// Rem font size conversion w/ px fallbacks
+// https://github.com/stubbornella/oocss/blob/master/oocss/src/components/utils/_fontSize.scss
+/**
+ * Convert font-size from px to rem with px fallback
+ *
+ * @param $size - the value in pixel you want to convert
+ *
+ * e.g. p {@include fontSize(12px);}
+ * 
+ */
+
+// Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+//Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+
+// Accessibility mixins
+
+// Makes an element visually hidden, but accessible.
+// @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal;
+}
+
+@mixin visually-hidden-important {
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  width: 1px !important;
+  word-wrap: normal !important;
+}
+
+// Turns off the visually-hidden effect.
+@mixin visually-hidden-off {
+  clip: auto;
+  height: auto;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+@mixin visually-hidden-off-important {
+  clip: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+  position: static !important;
+  width: auto !important;
+}
+
+// Makes an element visually hidden by default, but visible when focused.
+@mixin focusable {
+  @include visually-hidden;
+
+  &:active,
+  &:focus {
+    @include visually-hidden-off;
+  }
+}
+
+@mixin focusable-important {
+  @include visually-hidden-important;
+
+  &:active,
+  &:focus {
+    @include visually-hidden-off-important;
+  }
+}
+
+// Makes an element completely hidden, visually and to screen readers.
+@mixin hidden {
+  display: none;
+}
+
+@mixin hidden-important {
+  display: none !important;
+}
+
+// Makes an element completely hidden, visually and to screen readers, but
+// maintains its layout.
+@mixin invisible {
+  visibility: hidden;
+}
+
+@mixin invisible-important {
+  visibility: hidden !important;
+}
