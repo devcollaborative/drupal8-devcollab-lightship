@@ -10,6 +10,7 @@ libraries:
   - devcollab_starter/global-scripts
 
 regions:
+  leaderboard: Leaderboard
   header: Header
   main_menu: 'Main menu'
   secondary_menu: 'Secondary menu'

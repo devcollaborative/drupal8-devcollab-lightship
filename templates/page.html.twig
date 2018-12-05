@@ -45,17 +45,21 @@
 <div class="layout-container">
 
   <header role="banner">
-    <div class="container">
+    {% if page.leaderboard|render %}
+      <div id="hero">
+        {{ page.leaderboard }}
+      </div>
+    {% endif %}
+
+
       {{ page.header }}
-    </div>
+
   </header>
 
   {% if page.main_menu or page.secondary_menu %}
     <nav id="navigation" class="menu{% if main_menu %} with-primary{% endif %}{% if secondary_menu %} with-secondary{% endif %}">
-      <div class="container">
         {{ page.main_menu }}
         {{ page.secondary_menu }}
-      </div>
     </nav><!-- /#navigation -->
   {% endif %}
 
@@ -70,7 +74,6 @@
     {% endif %}
 
 
-    <div class="container">
       <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
       {{ page.breadcrumb }}
@@ -94,15 +97,12 @@
           {{ page.sidebar_second }}
         </aside>
       {% endif %}
-    </div>
 
   </main>
 
   {% if page.footer %}
     <footer role="contentinfo">
-      <div class="container">
         {{ page.footer }}
-      </div>
     </footer>
   {% endif %}
 
