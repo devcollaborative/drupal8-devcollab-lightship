@@ -1,42 +1,37 @@
 Introduction
 -----------
+This codebase is starter theme code for Drupal 8, by the team at DevCollab.
 
-devcollab_starter is a simple, clean and responsive layout theme for frontend. Its very 
-light weight and easy to use. Which provide two column layout one is sidebar 
-and second is content.
 
-  FEATURES:-
-  --------
-  
-   - Responsive, Mobile-Friendly Theme
-   - HTML5 and CSS3
-   - Mobile support (Tablet, Android, iPhone, etc)
-   - Responsive layout
-   - 2-columns layout
-   - Total 11 regions
-   - Minimal design and nice typography
-   - Supported standard theme features: user picture in comment and posts etc
+Setting Up Gulp 
+--------
+Rename all instances of the theme's machine name devcollab_starter in file names and in files themselves with theme_name. 
+You can do a search/replace on the theme folder in order to do this. 
+Our usual convention for the theme's machine name is the org abbreviation and the year the site's slated to be launched, so for example org2019.
 
-Requirements
-------------
 
-No special requirements
+Setting Up Gulp 
+--------
 
-Installation
-------------
-* Clone theme into sites/all/themes from this link
-git clone --branch 7.x-1.x http://git.drupal.org/sandbox/sumitkumar/2467223.git
-devcollab_starter
-  Its create devcollab_starter folder in sites/all/themes
+Steps detailed here: https://css-tricks.com/gulp-for-beginners/
 
-* https://www.drupal.org/node/2470681 for further information.
+  1. Initialize Node Package Manager - npm init
+  This will generate a package-lock.json file, which *should* be committed in Git.
 
-* Enable the theme Aministration Menu.
-  Aministration Menu >> Appearance 
-  Chosse theme
+  2. If you have Gulp installed globally (see CSS Tricks for instructions), then save it locally to this project with: 
+  npm install gulp --save-dev
 
-Configuration
--------------
+  3. Type 
+  npm i 
+  to have npm install the dependencies for the project per package.json. You should be ready to compile now!
 
-Find the configuration of theme here:
-<strong>admin/appearance/settings/devcollab_starter</strong>
+
+Gulp Tasks
+--------
+
+gulp sass - compiles sass into CSS
+
+gulp clean:css - deletes compiled CSS
+
+gulp watch - watches sass directories for changes and recompiles whenever you save a change
+
