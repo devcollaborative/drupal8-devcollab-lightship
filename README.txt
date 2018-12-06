@@ -35,3 +35,25 @@ gulp clean:css - deletes compiled CSS
 
 gulp watch - watches sass directories for changes and recompiles whenever you save a change
 
+
+Adding Externally Hosted Custom Fonts 
+--------
+To add an external CSS file for Google or Adobe Fonts (formerly Typekit):
+
+1. Add a fonts block to the libraries.yml file, like this: 
+
+  fonts:
+  version: VERSION
+  css:
+    theme:
+      https://use.typekit.net/zux5iaj.css: { type: external, minified: true } 
+
+2. Add this top line in the libraries block of the .info.yml file:
+
+libraries:
+  - ep2019/fonts
+  - ep2019/global-styling
+  - ep2019/global-scripts
+
+3. Profit! 
+ 
