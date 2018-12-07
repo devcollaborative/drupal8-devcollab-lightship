@@ -44,7 +44,7 @@
 #}
 <div class="layout-container">
 
-  <header role="banner">
+  <header role="banner" id="header">
     {% if page.leaderboard|render %}
       <div id="leaderboard">
         {{ page.leaderboard }}
@@ -101,7 +101,7 @@
   </main>
 
   {% if page.footer %}
-    <footer role="contentinfo">
+    <footer role="contentinfo" id="footer">
         {{ page.footer }}
     </footer>
   {% endif %}
