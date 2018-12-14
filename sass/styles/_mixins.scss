@@ -1,13 +1,18 @@
 // Px to Em mixin
-$browser-context: 16; // Default
 
 // Unit mixins
-@function em($pixels, $context: $browser-context) {
+// Ems for breakpoints, using browser context font size 
+@function bp-em($pixels, $context: 16) {
   @return #{$pixels/$context}em;
 }
 
-// Rem conversion
+// Ems in relation to base font size 
+@function em($pixels, $context: $base-font-size) {
+  @return #{$pixels/$context}em;
+}
 
+
+// Rem conversion
 // Convert pixel values to rem.
 @function rem($px, $base: $base-font-size) {
   @return ($px / $base) * 1rem;
@@ -27,14 +32,14 @@ $browser-context: 16; // Default
 
 // Function for converting a px based font-size to rem.
 @function calculateRem($size) {
-  $remSize: $size / 16px;
+  $remSize: $size / $base-font-size;
 //Default font size on html element is 100%, equivalent to 16px;
   @return #{$remSize}rem;
 }
 
 // Mixin that will include the fall back px declaration as well as the calculated rem value.
 @mixin fontSize($size) {
-  font-size: $size;
+  font-size: $size px;
   font-size: calculateRem($size);
 }
 
