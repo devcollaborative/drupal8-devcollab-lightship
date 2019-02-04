@@ -36,6 +36,8 @@ gulp clean:css - deletes compiled CSS
 
 gulp watch - watches sass directories for changes and recompiles whenever you save a change
 
+Adding additional libraries and associated tasks for developer convenience may be okay on a particular project, but please check in with a team lead before you add them. We are doing our best to reduce complexity so that later on, in 2-5 years' time, it's not difficult to reproduce this development environment. 
+
 
 Adding Externally Hosted Custom Fonts 
 --------
@@ -67,6 +69,11 @@ To override template files, copy Classy template files into the theme's "templat
 Adding Regions
 --------
 To add new regions to the theme for block placement, add the region to the "regions" section of your-theme-name.info.yml, and then add the region to the theme's page.html.twig template. 
+
+
+Sass Partials
+-------------
+In the future, we may add sass-globbing tasks to gulp, to automatically add new partials as needed. We have not yet agreed as a team on how to name and organize partials, so please feel free to do what works for you. You can then add them to the custom.scss file manually. (Don't forget: if you choose to put partials into subfolders, make sure to add the subfolder wildcard path to the gulp tasks for sass compiling and watching.)
 
 
 Questions?
