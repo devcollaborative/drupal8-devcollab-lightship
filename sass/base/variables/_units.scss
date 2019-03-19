@@ -1,10 +1,6 @@
+// Units
 
-/// Units ///
-// Set base font size in px on <html> element
-$base-font-size: 16; // Pixel value only, no px unit
-$base-line-height: 1.5;
-
-// ** When you can... 
+// ** When you can...
 // ** Use REMs for sizes and spacing.
 // ** Use EMs for media queries.
 
@@ -17,21 +13,5 @@ $page-margin-wide: rem(40);
 
 $vertical-spacing: rem(16);
 
-
 // Breakpoint Vars - use bp-em mixin to convert px to ems
 $bp-wide: bp-em(1200);
-
-// Colors 
-
-
-// Fonts 
-
-
-
-// Helpers
-// Outlines
-$debug-blue: 1px dotted blue;
-$debug-green: 1px dotted green;
-$debug-red: 1px dotted red;
-$debug-orange: 1px dotted orange;
-$debug-purple: 1px dotted rebeccapurple;
