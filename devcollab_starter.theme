@@ -22,7 +22,7 @@
 /**
  * Implements template_preprocess_HOOK() for the HTML template.
  */
-function sharp_preprocess_html(&$variables) {
+function devcollab_starter_preprocess_html(&$variables) {
 
   // Add x-ua-compatibility tags.
   $x_ua_compatible = [
