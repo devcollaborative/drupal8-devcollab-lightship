@@ -3,6 +3,9 @@
 // Modules
 @import "breakpoint";
 
+// Base Mixins
+@import "base/mixins";
+
 // Base Variables
 @import "base/variables/breakpoints";
 @import "base/variables/colors";
@@ -13,7 +16,6 @@
 // Base Styles
 @import "base/accessibility";
 @import "base/base";
-@import "base/mixins";
 @import "base/typography";
 
 // Styles
