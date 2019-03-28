@@ -38,7 +38,7 @@
 
 // Mixin that will include the fall back px declaration as well as the calculated rem value.
 @mixin fontSize($size) {
-  font-size: $size px;
+  font-size: #{$size}px;
   font-size: calculateRem($size);
 }
 
