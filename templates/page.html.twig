@@ -51,28 +51,24 @@
       </div>
     {% endif %}
 
-
-      {{ page.header }}
+    {{ page.header }}
 
   </header>
 
   {% if page.main_menu or page.secondary_menu %}
     <nav id="navigation" class="menu{% if main_menu %} with-primary{% endif %}{% if secondary_menu %} with-secondary{% endif %}">
-        {{ page.main_menu }}
-        {{ page.secondary_menu }}
-    </nav><!-- /#navigation -->
+      {{ page.main_menu }}
+      {{ page.secondary_menu }}
+    </nav>{#  /#navigation #}
   {% endif %}
-
 
   <main role="main">
 
-    
     {% if page.hero|render %}
       <div id="hero">
         {{ page.hero }}
       </div>
     {% endif %}
-
 
       <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 

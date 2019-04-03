@@ -1,13 +1,13 @@
 /**
  * @file
- * Code for humbergur menu.
+ * Code for custom js.
  */
 
 (function($, Drupal, drupalSettings) {
   Drupal.behaviors.devcollab_starter = {
       attach: function(context, settings) {
-        
-        // Scripts go here 
+
+        // Scripts go here
 
       }
     };

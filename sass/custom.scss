@@ -1,11 +1,30 @@
-@import "styles/mixins";
-@import "styles/variables";
-@import "styles/base";
+// Compile Sass
+
+// Modules
+@import "breakpoint";
+
+// Base Mixins
+@import "base/mixins";
+
+// Base Variables
+@import "base/variables/breakpoints";
+@import "base/variables/colors";
+@import "base/variables/debugging";
+@import "base/variables/fonts";
+@import "base/variables/units";
+
+// Base Styles
+@import "base/accessibility";
+@import "base/base";
+@import "base/typography";
+
+// Styles
+@import "styles/admin";
 @import "styles/layout";
-@import "styles/header";
-@import "styles/footer";
-@import "styles/content-components";
 
+// Component Styles
+@import "styles/regions/header";
+@import "styles/regions/footer";
 
-
-
+// Other
+@import "print";
