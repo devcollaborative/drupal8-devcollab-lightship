@@ -6,7 +6,7 @@ This is a sub-theme of the core base theme, Classy.
 
 Setting Up Your Theme
 --------
-Rename all instances of the theme's machine name devcollab_starter in file names and in files themselves with your theme_name.
+Rename all instances of the theme's machine name devcollab_lightship in file names and in files themselves with your theme_name.
 You can do a search/replace on the theme folder in order to do this.
 Our usual convention for the theme's machine name is an organization's abbreviation and the year the site's slated to be launched, so for example org2019.
 
