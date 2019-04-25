@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Functions to support theming in the devcollab_lightship theme.
@@ -43,5 +44,24 @@ function devcollab_lightship_preprocess_html(&$variables) {
 
   if ($node) {
     $variables['attributes']['class'][] = 'page-node-' . $node->id();
+  }
+
+  // Add information about the number of sidebars.
+  $has_first_sidebar = !empty($variables['page']['sidebar_first']);
+  $has_second_sidebar = !empty($variables['page']['sidebar_second']);
+
+  if ($has_first_sidebar && $has_second_sidebar) {
+    $variables['attributes']['class'][] = 'layout-two-sidebars';
+  }
+  elseif ($has_first_sidebar) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-first';
+  }
+  elseif ($has_second_sidebar) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-second';
+  }
+  else {
+    $variables['attributes']['class'][] = 'layout-no-sidebars';
   }
 }
