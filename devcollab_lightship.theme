@@ -46,19 +46,16 @@ function devcollab_lightship_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = 'page-node-' . $node->id();
   }
 
-  // Add information about the number of sidebars.
+  // Add information about presence of sidebars.
+  // .sidebar-first.sidebar-second means class for two sidebars 
+  
   $has_first_sidebar = !empty($variables['page']['sidebar_first']);
   $has_second_sidebar = !empty($variables['page']['sidebar_second']);
 
-  if ($has_first_sidebar && $has_second_sidebar) {
-    $variables['attributes']['class'][] = 'layout-two-sidebars';
-  }
-  elseif ($has_first_sidebar) {
-    $variables['attributes']['class'][] = 'layout-one-sidebar';
+  if ($has_first_sidebar) {
     $variables['attributes']['class'][] = 'layout-sidebar-first';
   }
   elseif ($has_second_sidebar) {
-    $variables['attributes']['class'][] = 'layout-one-sidebar';
     $variables['attributes']['class'][] = 'layout-sidebar-second';
   }
   else {
