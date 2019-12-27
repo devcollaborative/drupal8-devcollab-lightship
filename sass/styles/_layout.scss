@@ -13,7 +13,7 @@
 	padding: $vertical-spacing 0;
 }
 
-@media (max-width: $bp-wide) {
+@media (max-width: $desktop) {
    .container {
    		margin: 0 $page-margin;
    }
