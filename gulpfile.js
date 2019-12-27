@@ -8,6 +8,9 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 // Delete generated files when needed
 var del = require('del');
+// Run a list of tasks in order
+var runSequence = require('run-sequence');
+
 
 gulp.task('sass', function(){
   return gulp.src('sass/**/*.scss')
@@ -23,4 +26,11 @@ gulp.task('clean:css', function(){
 
 gulp.task('watch', function(){
   gulp.watch('sass/**/*.scss', ['sass']);
+});
+
+// One time build process
+gulp.task('build', function() {
+  runSequence(
+    'clean:css', 'sass'
+  )
 });

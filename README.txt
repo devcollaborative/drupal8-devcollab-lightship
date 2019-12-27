@@ -34,6 +34,9 @@ gulp clean:css - deletes compiled CSS
 
 gulp watch - watches sass directories for changes and recompiles whenever you save a change
 
+gulp build - simple one time build task
+
+
 Adding additional libraries and associated tasks for developer convenience may be okay on a particular project, but please check in with a team lead before you add them. We are doing our best to reduce complexity so that later on, in 2-5 years' time, it's not difficult to reproduce this development environment.
 
 
