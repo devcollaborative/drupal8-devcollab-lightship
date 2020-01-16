@@ -16,5 +16,8 @@
   },
   "dependencies": {
     "gulp-sourcemaps": "^2.6.5"
+  },
+  "engines": {
+    "node": "11.10.0"
   }
 }
