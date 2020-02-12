@@ -16,13 +16,16 @@ Setting Up Gulp
 
 Steps detailed here: https://css-tricks.com/gulp-for-beginners/
 
-  1. Initialize Node Package Manager - npm init
+  1. Install a version of node that is known to work - nvm use
+  This will find the version of node specifced in the .nvmrc file.
+
+  2. Initialize Node Package Manager - npm init
   This will generate a package-lock.json file, which *should* be committed in Git.
 
-  2. If you have Gulp installed globally (see the CSS Tricks link above for instructions), then save it locally to this project with:
+  3. If you have Gulp installed globally (see the CSS Tricks link above for instructions), then save it locally to this project with:
   npm install gulp --save-dev
 
-  3. Type npm i to have npm install the dependencies for the project per package.json. You should be ready to compile now!
+  4. Type npm i to have npm install the dependencies for the project per package.json. You should be ready to compile now!
 
 
 Gulp Tasks
