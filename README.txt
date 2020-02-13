@@ -17,7 +17,9 @@ Setting Up Gulp
 Steps detailed here: https://css-tricks.com/gulp-for-beginners/
 
   1. Install a version of node that is known to work - nvm use
-  This will find the version of node specifced in the .nvmrc file.
+  This will find the version of node specifced in the .nvmrc file. 
+  ** This step is optional. You may use any version of Node, but if you have troubles, this is a known version that 
+  works. **
 
   2. Initialize Node Package Manager - npm init
   This will generate a package-lock.json file, which *should* be committed in Git.
