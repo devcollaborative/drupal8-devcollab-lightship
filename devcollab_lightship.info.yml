@@ -3,8 +3,6 @@ type: theme
 base theme: classy
 description: The devcollab_lightship starter theme is a lightweight starter theme based on the core Classy theme. It's meant for you to completely customize based on your own project design.
 package: Custom
-# version: VERSION
-# core: 8.x
 libraries:
   - devcollab_lightship/global-styling
   - devcollab_lightship/global-scripts
@@ -22,7 +20,6 @@ regions:
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
   footer: Footer
-
 
 version: '8.x-1.0'
 core: '8.x'
