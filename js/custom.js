@@ -4,7 +4,7 @@
  */
 
 (function($, Drupal, drupalSettings) {
-  Drupal.behaviors.devcollab_lightship = {
+  Drupal.behaviors.lightship = {
       attach: function(context, settings) {
 
         // Scripts go here

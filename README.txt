@@ -6,7 +6,7 @@ This is a sub-theme of the core base theme, Classy.
 
 Setting Up Your Theme
 --------
-Rename all instances of the theme's machine name devcollab_lightship in file names and in files themselves with your theme_name.
+Rename all instances of the theme's machine name lightship in file names and in files themselves with your theme_name.
 You can do a search/replace on the theme folder in order to do this.
 Our usual convention for the theme's machine name is an organization's abbreviation and the year the site's slated to be launched, so for example org2019.
 
@@ -16,18 +16,13 @@ Setting Up Gulp
 
 Steps detailed here: https://css-tricks.com/gulp-for-beginners/
 
-  1. Install a version of node that is known to work - nvm use
-  This will find the version of node specifced in the .nvmrc file. 
-  ** This step is optional. You may use any version of Node, but if you have troubles, this is a known version that 
-  works. **
-
-  2. Initialize Node Package Manager - npm init
+  1. Initialize Node Package Manager - npm init
   This will generate a package-lock.json file, which *should* be committed in Git.
 
-  3. If you have Gulp installed globally (see the CSS Tricks link above for instructions), then save it locally to this project with:
+  2. If you have Gulp installed globally (see the CSS Tricks link above for instructions), then save it locally to this project with:
   npm install gulp --save-dev
 
-  4. Type npm i to have npm install the dependencies for the project per package.json. You should be ready to compile now!
+  3. Type npm i to have npm install the dependencies for the project per package.json. You should be ready to compile now!
 
 
 Gulp Tasks
