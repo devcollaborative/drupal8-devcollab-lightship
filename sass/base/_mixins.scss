@@ -45,17 +45,17 @@
 // Preferred version of clearfix
 @mixin clearfix {
   &:after {
-    content: "";
     display: table;
     clear: both;
+    content: "";
   }
 }
 
 // Centers a block level element, requires width
 @mixin center-block {
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 // Vertical align, all browsers http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/

@@ -7,17 +7,17 @@ ul.tabs {
 
 // Fixing contextual link dropdowns if overriden in theme
 ul.contextual-links li {
+  position: relative !important;
   display: block !important;
   float: none !important;
-  position: relative !important;
 }
 
 .contextual-links a {
   color: #000 !important;
 
   &:hover {
-    color: #000 !important;
     text-decoration: underline !important;
+    color: #000 !important;
   }
 }
 

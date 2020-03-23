@@ -20,8 +20,8 @@ h6 {
 }
 
 pre {
-  white-space: pre-wrap;
   overflow-x: auto;
+  white-space: pre-wrap;
 }
 
 // Other
@@ -45,13 +45,13 @@ b {
 }
 
 sup {
+  vertical-align: super;
   font-size: 50%;
   line-height: 0;
-  vertical-align: super;
 }
 
 sub {
+  vertical-align: sub;
   font-size: 50%;
   line-height: 0;
-  vertical-align: sub;
 }

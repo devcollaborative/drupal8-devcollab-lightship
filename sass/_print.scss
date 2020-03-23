@@ -17,15 +17,15 @@
   a,
   a:link,
   a:visited {
-    color: #000 !important;
     text-decoration: underline !important;
+    color: #000 !important;
   }
 
   main {
     /* Add visible URL after links. */
     a[href]:after {
-      color: #000 !important;
       content: " (" attr(href) ")" !important;
+      color: #000 !important;
     }
 
     /* Only display useful links. */
@@ -61,7 +61,7 @@
   .tabs,
   .pager,
   .feed-icons {
-    visibility: hidden;
     display: none;
+    visibility: hidden;
   }
 }
