@@ -5,9 +5,9 @@
 
 (function ($, Drupal, drupalSettings) {
   Drupal.behaviors.lightship = {
-      attach: function (context, settings) {
+    attach(context, settings) {
 
-        // Scripts go here.
-      }
-    };
-})(jQuery, Drupal, drupalSettings);
+      // Scripts go here.
+    },
+  };
+}(jQuery, Drupal, drupalSettings));
