@@ -13,4 +13,3 @@ global-scripts:
   js:
       js/modernizr.js: {}
       js/custom.js: {}
-

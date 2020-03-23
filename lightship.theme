@@ -31,8 +31,8 @@ function lightship_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = 'page-node-' . $node->id();
   }
 
-  // Add information about presence of sidebars.
-  // .sidebar-first.sidebar-second means class for two sidebars
+  /* Add information about presence of sidebars.
+  .sidebar-first.sidebar-second means class for two sidebars. */
 
   $has_first_sidebar = !empty($variables['page']['sidebar_first']);
   $has_second_sidebar = !empty($variables['page']['sidebar_second']);
