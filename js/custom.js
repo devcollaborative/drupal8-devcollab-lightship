@@ -3,12 +3,11 @@
  * Code for custom js.
  */
 
-(function($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings) {
   Drupal.behaviors.lightship = {
-      attach: function(context, settings) {
+      attach: function (context, settings) {
 
-        // Scripts go here
-
+        // Scripts go here.
       }
     };
 })(jQuery, Drupal, drupalSettings);
