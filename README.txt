@@ -78,6 +78,9 @@ In the future, we may add sass-globbing tasks to gulp, to automatically add new 
 
 * Right now we have this divided out into two folders; (1) base and (2) styles. Ideally the base folder should be used as a set-it-and-forget folder structure for core theme styles and components. Styles is where the magic should happen with partials for theming the site.
 
+Modernizr.js
+--------------
+This theme comes out of the box with a custom implementation of Modernizr (https://modernizr.com/) that checks for flexbox support only, released on an MIT license. Of course, after you convert Lightship into your own custom project, feel free to replace this with an alternative version of Modernizr or remove it altogether.
 
 Questions?
 --------
