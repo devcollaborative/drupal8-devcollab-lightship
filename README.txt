@@ -39,7 +39,8 @@ gulp sass - compiles sass into CSS
 
 gulp clean:css - deletes compiled CSS
 
-gulp watch - watches sass directories for changes and recompiles whenever you save a change
+gulp watch - watches sass directories for changes and recompiles whenever you
+save a change
 
 gulp build - simple one time build task
 
