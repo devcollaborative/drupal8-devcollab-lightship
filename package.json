@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "del": "^3.0.0",
+    "eslint-config-drupal-bundle": "^1.0.2",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2",
     "run-sequence": "^2.2.1"
