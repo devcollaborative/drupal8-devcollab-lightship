@@ -3,7 +3,7 @@
  *
  * @param $size - the value in pixels (without px suffix) that you want to convert
  *
- * e.g. p {@include fontSize(12);} 
+ * e.g. p {@include fontSize(12);}
  *
  */
 .skip-link {
