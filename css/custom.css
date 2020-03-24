@@ -36,7 +36,7 @@ html {
   line-height: 1.5;
 
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
+  -moz-osx-font-smoothing: grayscale;
   text-size-adjust: 100%;
 }
 
@@ -51,7 +51,7 @@ svg {
 }
 
 pre {
-  overflow-x: auto; 
+  overflow-x: auto;
   white-space: pre-wrap;
 }
 
@@ -75,13 +75,13 @@ b {
 }
 
 sup {
-  vertical-align: super; 
+  vertical-align: super;
   font-size: 50%;
   line-height: 0;
 }
 
 sub {
-  vertical-align: sub; 
+  vertical-align: sub;
   font-size: 50%;
   line-height: 0;
 }
@@ -91,7 +91,7 @@ ul.tabs {
 }
 
 ul.contextual-links li {
-  position: relative !important; 
+  position: relative !important;
   display: block !important;
   float: none !important;
 }
@@ -100,7 +100,7 @@ ul.contextual-links li {
   color: #000 !important;
 }
 .contextual-links a:hover {
-  text-decoration: underline !important; 
+  text-decoration: underline !important;
   color: #000 !important;
 }
 
@@ -124,7 +124,7 @@ ul.contextual-links li {
 }
 
 .region {
-  padding: 1rem 0; 
+  padding: 1rem 0;
   outline: 1px dotted blue;
 }
 
@@ -151,7 +151,7 @@ ul.contextual-links li {
   a,
   a:link,
   a:visited {
-    text-decoration: underline !important; 
+    text-decoration: underline !important;
     color: #000 !important;
   }
   main {
@@ -160,7 +160,7 @@ ul.contextual-links li {
     /* Add visible title after abbreviations. */
   }
   main a[href]:after {
-    content: " (" attr(href) ")" !important; 
+    content: " (" attr(href) ")" !important;
     color: #000 !important;
   }
   main a[href^="javascript:"]:after,
@@ -190,7 +190,7 @@ ul.contextual-links li {
   .tabs,
   .pager,
   .feed-icons {
-    display: none; 
+    display: none;
     visibility: hidden;
   }
 }
