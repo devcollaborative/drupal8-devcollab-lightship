@@ -19,7 +19,7 @@ let style = 'compressed';
 gulp.task('sass', () => gulp.src('sass/**/*.scss')
   .pipe(sourcemaps.init())
   .pipe(sass({ outputStyle: style })) // Converts Sass to CSS with gulp-sass.
-  .pipe(sourcemaps.write())
+  // .pipe(sourcemaps.write())
   .pipe(gulp.dest('css')));
 
 gulp.task('clean:css', () => del.sync('css/*'));
