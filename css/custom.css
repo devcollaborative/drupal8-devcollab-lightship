@@ -3,7 +3,7 @@
  *
  * @param $size - the value in pixels (without px suffix) that you want to convert
  *
- * e.g. p {@include fontSize(12);} 
+ * e.g. p {@include fontSize(12);}
  *
  */
 .skip-link {
@@ -155,11 +155,11 @@ ul.contextual-links li {
     color: #000 !important;
   }
   main {
-    /* Add visible URL after links. */
     /* Only display useful links. */
     /* Add visible title after abbreviations. */
   }
   main a[href]:after {
+    /* Add visible URL after links. */
     content: " (" attr(href) ")" !important;
     color: #000 !important;
   }

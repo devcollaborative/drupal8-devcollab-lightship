@@ -22,8 +22,8 @@
   }
 
   main {
-    /* Add visible URL after links. */
     a[href]:after {
+      /* Add visible URL after links. */
       content: " (" attr(href) ")" !important;
       color: #000 !important;
     }
