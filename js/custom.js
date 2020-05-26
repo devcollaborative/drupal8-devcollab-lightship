@@ -9,6 +9,7 @@
   Drupal.behaviors.lightship = {
     attach(context, settings) {
       // Scripts go here.
-    },
+    }
   };
+// eslint-disable-next-line no-undef
 })(jQuery, Drupal, drupalSettings);
