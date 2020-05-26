@@ -11,5 +11,4 @@ global-scripts:
     - core/drupal
     - core/drupalSettings
   js:
-      js/modernizr.js: {}
       js/custom.js: {}
