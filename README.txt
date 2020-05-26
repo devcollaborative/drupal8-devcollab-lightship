@@ -19,7 +19,7 @@ LightShip is a subtheme of the Core base theme, Classy. It was designed for D8 b
 
 Our focus is on long-term sustainability of code, and in baking in semantic and accessible code wherever we can. Because front-end development tools and frameworks change so quickly, building a theme with many developer tool dependencies can make it harder for other developers, or even future you, to jump back into a front-end codebase down the road.
 
-LightShip does use Sass, with gulp as a taskrunner. The development tools to support Sass are as light as we could make them, so if you prefer to write vanilla CSS, fell free to remove gulp and Sass. 
+LightShip does use Sass, with gulp as a taskrunner. The development tools to support Sass are as light as we could make them, so if you prefer to write vanilla CSS, fell free to remove gulp and Sass.
 
 The theme has some Sass mixins and structured partials that you can modify, remove, or rearrange. It's only got four gulp tasks: compile Sass, watch Sass, delete compiled CSS, and gulp build. Sourcemaps are included in the gulpfile to help with debugging Sass. Other than that, it's ready for you to write front-end code.
 
@@ -55,7 +55,7 @@ CONFIGURATION
  * Setting Up Your Theme
 
     - Rename all instances of the theme's machine name lightship in file names and in
-      files themselves with your theme_name. 
+      files themselves with your theme_name.
 
       You can do a search/replace on the theme folder in order to do this.
       Our usual convention for the theme's machine name is an organization's
@@ -63,7 +63,7 @@ CONFIGURATION
       org2019.
 
  * Setting Up Gulp
-    
+
     Steps detailed here: https://css-tricks.com/gulp-for-beginners/
 
     1. Initialize Node Package Manager - npm init
@@ -90,14 +90,14 @@ CONFIGURATION
        gulp build - simple one time build task
 
        Adding additional libraries and associated tasks for developer convenience may be okay on a particular project, but please check in with a team lead before you add them. We are doing our best to reduce complexity so that over 2-5 years' time, it's not difficult to reproduce this development environment for front-end enhancements or repairs.
-  
+
 
 FAQ
 ---
 
-Q: How do I add externally hosted web fonts? 
+Q: How do I add externally hosted web fonts?
 
-A:  
+A:
     1. Add a fonts block to the libraries.yml file, like this:
 
 fonts:
@@ -114,34 +114,34 @@ libraries:
   - your-theme-name/global-scripts
 
 
-Q: How do I customize template files? 
+Q: How do I customize template files?
 
 A: To override template files, copy Classy template files into the theme's
    "templates" sub-directory.
 
 
-Q: How about adding regions? Can I add regions? 
+Q: How about adding regions? Can I add regions?
 
 A: To add new regions to the theme for block placement, add the region to the
    "regions" section of your-theme-name.info.yml, and then add the region to the theme's page.html.twig template.
 
 
-Q: Can I rename or add my own Sass partials? 
+Q: Can I rename or add my own Sass partials?
 
-A: Absolutely, and please do. 
+A: Absolutely, and please do.
 
    We have partials divided into two folders; (1) base and (2) styles.
-   Ideally the base folder should be used for set-it-and-forget-it variables, mix-ins, fonts, and fundamental theme elements. Styles is intended to be where your the bulk of your CSS customization and base style variants go, where most of the CSS magic happens.  
+   Ideally the base folder should be used for set-it-and-forget-it variables, mix-ins, fonts, and fundamental theme elements. Styles is intended to be where your the bulk of your CSS customization and base style variants go, where most of the CSS magic happens.
 
-   If you have a preferred way to organize and name partials, you do not have to use our partials setup; please feel free to do what works for you. 
+   If you have a preferred way to organize and name partials, you do not have to use our partials setup; please feel free to do what works for you.
 
    Don't forget to add or update partials in the custom.scss file manually, so that they will compile into CSS properly. You could also add sass-globbing to gulp to handle this automatically if you prefer. (Don't forget: if you choose to put partials into subfolders, make sure to add the subfolder wildcard path to the gulp tasks for sass compiling, watching, and/or globbing.)
 
 
 Q: Where, oh where, do I put my JavaScript?
 
-A: If you choose to add JavaScript to your theme, it should go into the 
-   js/custom.js file. If you wish to add modernizr.js, or any other JavaScript resource there, remember to add each new JS file to your-theme-name.libraries.yml. 
+A: If you choose to add JavaScript to your theme, it should go into the
+   js/custom.js file. If you wish to add modernizr.js, or any other JavaScript resource there, remember to add each new JS file to your-theme-name.libraries.yml.
 
 
 MAINTAINERS
