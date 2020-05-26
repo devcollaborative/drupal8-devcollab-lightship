@@ -6,6 +6,7 @@
 
 // eslint-disable-next-line func-names
 (function ($, Drupal, drupalSettings) {
+  'use strict';
   Drupal.behaviors.lightship = {
     attach(context, settings) {
       // Scripts go here.
