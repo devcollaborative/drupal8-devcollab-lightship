@@ -154,12 +154,7 @@ ul.contextual-links li {
     text-decoration: underline !important;
     color: #000 !important;
   }
-  main {
-    /* Only display useful links. */
-    /* Add visible title after abbreviations. */
-  }
   main a[href]:after {
-    /* Add visible URL after links. */
     content: " (" attr(href) ")" !important;
     color: #000 !important;
   }

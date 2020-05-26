@@ -22,19 +22,19 @@
   }
 
   main {
+    // Add visible URL after links.
     a[href]:after {
-      /* Add visible URL after links. */
       content: " (" attr(href) ")" !important;
       color: #000 !important;
     }
 
-    /* Only display useful links. */
+    // Only display useful links.
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
       content: "";
     }
 
-    /* Add visible title after abbreviations. */
+    // Add visible title after abbreviations.
     abbr[title]:after {
       content: " (" attr(title) ")";
     }
