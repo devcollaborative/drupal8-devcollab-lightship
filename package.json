@@ -10,13 +10,21 @@
   "license": "ISC",
   "devDependencies": {
     "del": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
     "eslint-config-drupal-bundle": "^1.0.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2",
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "gulp-sourcemaps": "^2.6.5"
+    "ajv": "^5.5.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "prettier": "^2.0.5"
   },
   "engines": {
     "node": "11.10.0"
