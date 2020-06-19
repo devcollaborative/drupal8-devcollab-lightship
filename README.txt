@@ -75,8 +75,6 @@ CONFIGURATION -------------
     Steps detailed here: https://css-tricks.com/gulp-for-beginners/
 
     1. Initialize Node Package Manager - npm init
-       This will generate a package-lock.json file, which *should* be committed
-       in Git.
 
     2. If you have Gulp installed globally (see the CSS Tricks link above for
        instructions), then save it locally to this project with: npm install
