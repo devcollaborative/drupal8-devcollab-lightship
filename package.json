@@ -18,16 +18,20 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "prettier": "^2.0.5",
-    "run-sequence": "^2.2.1"
+    "gulp4-run-sequence": "^1.0.1"
   },
   "dependencies": {
     "ajv": "^5.5.2"
   },
   "engines": {
     "node": "11.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.drupalcode.org/project/lightship.git"
   }
 }
