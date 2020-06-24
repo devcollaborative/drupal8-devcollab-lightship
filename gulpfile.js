@@ -16,9 +16,15 @@ const del = require('del');
 const runSequence = require('gulp4-run-sequence');
 
 // Used to set whether CSS format is compressed or expanded when compiled.
-let style = 'expanded';
+const plumber = require('gulp-plumber');
+// Used to catch errors and continue build
+let style = 'compressed';
 
 gulp.task('sass', () => gulp.src('sass/**/*.scss')
+  .pipe(plumber(function(error){
+    console.log(error.message);
+    this.emit('end');
+  }))
   .pipe(sourcemaps.init())
   .pipe(sass({ outputStyle: style })) // Converts Sass to CSS with gulp-sass.
   // .pipe(sourcemaps.write())
