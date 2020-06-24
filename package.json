@@ -19,10 +19,11 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.1",
     "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "prettier": "^2.0.5",
-    "gulp4-run-sequence": "^1.0.1"
+    "gulp4-run-sequence": "^1.0.1",
+    "prettier": "^2.0.5"
   },
   "dependencies": {
     "ajv": "^5.5.2"
